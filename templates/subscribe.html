@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block title%}
+
+{{ title }}
+
+{% endblock %}
+
+{% block head %}
+<form action="/form" method="POST">
+    <br>
+  <div class="form-group">
+    <label for="inputfirstname">Email first name</label>
+    <input type="text" class="form-control" id="inputfirstname" size="10" aria-describedby="firstnameHelp" placeholder="Enter first name" name='fname'>
+  </div>
+    <br>
+    <div class="form-group">
+    <label for="inputlastname">Email last name</label>
+    <input type="text" class="form-control" id="inputlastname" size="10" aria-describedby="firstnameHelp" placeholder="Enter last name" name='lname'>
+  </div>
+    <br>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" size="10" aria-describedby="emailHelp" placeholder="Enter email" name='email'>
+  </div>
+    <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

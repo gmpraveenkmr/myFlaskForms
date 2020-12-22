@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block title%}
+
+{{ title }}
+
+{% endblock %}
+
+{% block head %}
+
+
+{% for subscriber in subscribers %}
+
+    <ul>
+    <br>
+    {{ subscriber }}
+    <br>
+    </ul>
+{% endfor %}
+
+{% endblock %}
